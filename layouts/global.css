@@ -1,0 +1,9 @@
+@font-face {
+    font-family: "Cairo";
+    src: local("Cairo"),
+     url(~assets/fonts/Cairo-VariableFont_wght.ttf) format("truetype");
+}
+
+html {
+    font-family: "Cairo";
+}
