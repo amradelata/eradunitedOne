@@ -3,6 +3,59 @@
     <!-- <img src="~/assets/img/bill-img-3.png" alt=""> -->
     <b-scontainer class="bv-example-row">
       <b-row>
+        <b-col col lg="4">
+          <div class="row">
+            <div class="col">
+              <nuxt-link to="/">
+                <figure class="figure image is-128x128">
+                  <img
+                    class="footerImage"
+                    src="~/assets/img/footer_logo.png"
+                    alt="إيراد المتحدة"
+                  />
+                </figure>
+              </nuxt-link>
+            </div>
+            <div class="col">
+              <ul>
+                <li><nuxt-link to="/" class="link">الرئيسيه</nuxt-link></li>
+                <li><nuxt-link to="/" class="link">الفروع</nuxt-link></li>
+                <li><nuxt-link to="/" class="link">مكتب النشر</nuxt-link></li>
+                <li><nuxt-link to="/" class="link">القسام</nuxt-link></li>
+                <li><nuxt-link to="/" class="link">اتصل بنا</nuxt-link></li>
+              </ul>
+            </div>
+          </div>
+        </b-col>
+        <b-col col lg="2">
+          <ul>
+            <li><nuxt-link to="/" class="link">من نحن</nuxt-link></li>
+            <li><nuxt-link to="/" class="link">الشحن والتوصيل</nuxt-link></li>
+            <li><nuxt-link to="/" class="link">طرق الدفع</nuxt-link></li>
+            <li><nuxt-link to="/" class="link">شروط الاستخدام</nuxt-link></li>
+            <li><nuxt-link to="/" class="link">سياسه الخصوصية</nuxt-link></li>
+          </ul>
+        </b-col>
+        <b-col col lg="3">
+          <ul>
+            <li><h4 class="has-text-weight-bold">القائمة البريدية</h4></li>
+            <li>
+              <p>
+                أدخل البريد الإلكتروني الخاص بك لتلقي آخر الأخبار عن الموقع
+                والمنتجات الجديدة
+              </p>
+            </li>
+            <li>
+              <b-input-group>
+                <b-input-group-prepend>
+                  <b-button variant="dark">ارسال</b-button>
+                </b-input-group-prepend>
+
+                <b-form-input type="text" min="0.00"></b-form-input>
+              </b-input-group>
+            </li></ul
+        ></b-col>
+
         <b-col col lg="3">
           <ul>
             <li><h4 class="has-text-weight-bold">تطبيقات الهواتف</h4></li>
@@ -24,58 +77,6 @@
               </div>
             </li></ul
         ></b-col>
-        <b-col col lg="3">
-          <ul>
-            <li><h4 class="has-text-weight-bold">القائمة البريدية</h4></li>
-            <li>
-              <p>
-                أدخل البريد الإلكتروني الخاص بك لتلقي آخر الأخبار عن الموقع
-                والمنتجات الجديدة
-              </p>
-            </li>
-            <li>
-              <b-input-group>
-                <b-input-group-prepend>
-                  <b-button variant="dark">ارسال</b-button>
-                </b-input-group-prepend>
-
-                <b-form-input type="text" min="0.00"></b-form-input>
-              </b-input-group>
-            </li></ul
-        ></b-col>
-        <b-col col lg="3">
-          <ul>
-            <li><nuxt-link to="/" class="link">من نحن</nuxt-link></li>
-            <li><nuxt-link to="/" class="link">الشحن والتوصيل</nuxt-link></li>
-            <li><nuxt-link to="/" class="link">طرق الدفع</nuxt-link></li>
-            <li><nuxt-link to="/" class="link">شروط الاستخدام</nuxt-link></li>
-            <li><nuxt-link to="/" class="link">سياسه الخصوصية</nuxt-link></li>
-          </ul>
-        </b-col>
-        <b-col col lg="3">
-          <div class="row">
-            <div class="col">
-              <ul>
-                <li><nuxt-link to="/" class="link">الرئيسيه</nuxt-link></li>
-                <li><nuxt-link to="/" class="link">الفروع</nuxt-link></li>
-                <li><nuxt-link to="/" class="link">مكتب النشر</nuxt-link></li>
-                <li><nuxt-link to="/" class="link">القسام</nuxt-link></li>
-                <li><nuxt-link to="/" class="link">اتصل بنا</nuxt-link></li>
-              </ul>
-            </div>
-            <div class="col">
-              <nuxt-link to="/">
-                <figure class="figure image is-128x128">
-                  <img
-                    class="footerImage"
-                    src="~/assets/img/footer_logo.png"
-                    alt="إيراد المتحدة"
-                  />
-                </figure>
-              </nuxt-link>
-            </div>
-          </div>
-        </b-col>
       </b-row>
     </b-scontainer>
     <div class="footer-end">

@@ -3,6 +3,7 @@
     <b-container fluid="lg">
       <Nav />
       <GreenNav />
+      <Hero />
       <Footer />
     </b-container>
   </div>

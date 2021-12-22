@@ -1,13 +1,13 @@
 <template>
   <div>
     <ul>
-      <b-button class="navBtn">صوروارسل</b-button>
       <li><nuxt-link to="/" class="link">الرئيسيه</nuxt-link></li>
       <li><nuxt-link to="/" class="link">الفروع</nuxt-link></li>
       <li><nuxt-link to="/" class="link">مكتب النشر</nuxt-link></li>
       <li><nuxt-link to="/" class="link">القسام</nuxt-link></li>
       <li><nuxt-link to="/" class="link">المدونة</nuxt-link></li>
       <li><nuxt-link to="/" class="link">اتصل بنا</nuxt-link></li>
+      <li><b-button class="navBtn">صوروارسل</b-button></li>
     </ul>
   </div>
 </template>
