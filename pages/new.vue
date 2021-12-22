@@ -177,4 +177,10 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+@media print {
+  .backP {
+    color: red;
+    background: #012d5a !important;
+  }
+}
 </style>

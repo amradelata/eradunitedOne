@@ -3,7 +3,7 @@
     <!-- <img src="~/assets/img/bill-img-3.png" alt=""> -->
     <b-scontainer class="bv-example-row">
       <b-row>
-        <b-col>
+        <b-col col lg="3">
           <ul>
             <li><h4 class="has-text-weight-bold">تطبيقات الهواتف</h4></li>
             <li>
@@ -24,7 +24,7 @@
               </div>
             </li></ul
         ></b-col>
-        <b-col>
+        <b-col col lg="3">
           <ul>
             <li><h4 class="has-text-weight-bold">القائمة البريدية</h4></li>
             <li>
@@ -43,7 +43,7 @@
               </b-input-group>
             </li></ul
         ></b-col>
-        <b-col>
+        <b-col col lg="3">
           <ul>
             <li><nuxt-link to="/" class="link">من نحن</nuxt-link></li>
             <li><nuxt-link to="/" class="link">الشحن والتوصيل</nuxt-link></li>
@@ -52,7 +52,7 @@
             <li><nuxt-link to="/" class="link">سياسه الخصوصية</nuxt-link></li>
           </ul>
         </b-col>
-        <b-col>
+        <b-col col lg="3">
           <div class="row">
             <div class="col">
               <ul>
@@ -79,50 +79,53 @@
       </b-row>
     </b-scontainer>
     <div class="footer-end">
-      <div class="columns">
-        <div class="column is-8">
-          <p>© 2018 جميع الحقوق محفوظة | برمجة و تصميم : مربع</p>
-        </div>
-        <div class="column is-4">
-          <ul class="social-media-footer">
-            <li>
-              <a href="https://wa.me/920017780" class="hvr-grow-shadow">
-                <i class="fab fa-whatsapp"></i>
-              </a>
-            </li>
-            <li>
-              <a href="" class="hvr-grow-shadow">
-                <i class="fab fa-facebook-square"></i>
-              </a>
-            </li>
-            <li>
-              <a href="" class="hvr-grow-shadow">
-                <i class="fab fa-instagram"></i>
-              </a>
-            </li>
-            <li>
-              <a href="" class="hvr-grow-shadow"
-                ><i class="fab fa-pinterest"></i
-              ></a>
-            </li>
-            <li>
-              <a href="" class="hvr-grow-shadow"
-                ><i class="fab fa-vimeo-v"></i
-              ></a>
-            </li>
-            <li>
-              <a
-                href="http://asdcoagro.com/webmail"
-                target="_blank"
-                class="hvr-grow-shadow mail-icon"
-              >
-                <i class="fas fa-envelope"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
+      <!-- <div class="columns"> -->
+
+      <div>
+        <ul class="social-media-footer">
+          <li>
+            <a href="https://wa.me/920017780" class="hvr-grow-shadow">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </li>
+          <li>
+            <a href="" class="hvr-grow-shadow">
+              <i class="fab fa-facebook-square"></i>
+            </a>
+          </li>
+          <li>
+            <a href="" class="hvr-grow-shadow">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="" class="hvr-grow-shadow"
+              ><i class="fab fa-pinterest"></i
+            ></a>
+          </li>
+          <li>
+            <a href="" class="hvr-grow-shadow"
+              ><i class="fab fa-vimeo-v"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="http://asdcoagro.com/webmail"
+              target="_blank"
+              class="hvr-grow-shadow mail-icon"
+            >
+              <i class="fas fa-envelope"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <p class="copyRight">
+          © 2022 جميع الحقوق محفوظة | برمجة و تصميم : مربع
+        </p>
       </div>
     </div>
+    <!-- </div> -->
   </footer>
 </template>
 <style scoped>
@@ -131,12 +134,14 @@ footer {
   padding: 3rem 3rem 0.5rem;
 }
 .footer-end {
+  display: flex;
   padding: 0 20px;
   margin-top: 20px;
   border-bottom: 53px solid #e9e4e4;
   border-left: 50px solid transparent;
   border-right: 50px solid transparent;
   height: 0;
+  justify-content: space-between;
 }
 .link {
   color: #1a1e1c;
@@ -171,7 +176,24 @@ li {
   color: #000;
   font-size: 20px;
 }
+.social-media-footer {
+  /* float: left; */
+}
+.copyRight {
+  /* float: right; */
+  color: #1a1e1c;
+  direction: ltr;
+  text-align: right;
+  font-size: 14px;
+}
 .social-media-footer li {
   display: inline-block;
+  margin: 0 5px;
+  transition-property: scale;
+  transition-duration: 2s;
+}
+.social-media-footer li :hover {
+  transform: scale(1.2);
+  color: #ccc;
 }
 </style>

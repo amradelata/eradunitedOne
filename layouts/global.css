@@ -4,9 +4,8 @@
      url(~assets/fonts/Cairo-VariableFont_wght.ttf) format("truetype");
 }
 
-html {
-    font-family: "Cairo";
-}
+
 body{
     background-color: #dfdcdc;
+    font-family: Cairo, sans-serif;
 }

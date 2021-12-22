@@ -1,7 +1,10 @@
 <template>
   <div>
-    <Nav />
-    <Footer />
+    <b-container fluid="lg">
+      <Nav />
+      <GreenNav />
+      <Footer />
+    </b-container>
   </div>
 </template>
 
