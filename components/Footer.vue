@@ -33,31 +33,39 @@
                 والمنتجات الجديدة
               </p>
             </li>
-            <li><input type="text" /></li></ul
+            <li>
+              <b-input-group>
+                <b-input-group-prepend>
+                  <b-button variant="dark">ارسال</b-button>
+                </b-input-group-prepend>
+
+                <b-form-input type="text" min="0.00"></b-form-input>
+              </b-input-group>
+            </li></ul
         ></b-col>
         <b-col>
           <ul>
-            <li>من نحن</li>
-            <li>الشحن والتوصيل</li>
-            <li>طرق الدفع</li>
-            <li>شروط الاستخدام</li>
-            <li>سياسه الخصوصية</li>
+            <li><nuxt-link to="/" class="link">من نحن</nuxt-link></li>
+            <li><nuxt-link to="/" class="link">الشحن والتوصيل</nuxt-link></li>
+            <li><nuxt-link to="/" class="link">طرق الدفع</nuxt-link></li>
+            <li><nuxt-link to="/" class="link">شروط الاستخدام</nuxt-link></li>
+            <li><nuxt-link to="/" class="link">سياسه الخصوصية</nuxt-link></li>
           </ul>
         </b-col>
         <b-col>
           <div class="row">
             <div class="col">
               <ul>
-                <li>الرئيسيه</li>
-                <li>الفروع</li>
-                <li>مكتب النشر</li>
-                <li>القسام</li>
-                <li>اتصل بنا</li>
+                <li><nuxt-link to="/" class="link">الرئيسيه</nuxt-link></li>
+                <li><nuxt-link to="/" class="link">الفروع</nuxt-link></li>
+                <li><nuxt-link to="/" class="link">مكتب النشر</nuxt-link></li>
+                <li><nuxt-link to="/" class="link">القسام</nuxt-link></li>
+                <li><nuxt-link to="/" class="link">اتصل بنا</nuxt-link></li>
               </ul>
             </div>
             <div class="col">
               <nuxt-link to="/">
-                <figure class="figure">
+                <figure class="figure image is-128x128">
                   <img
                     class="footerImage"
                     src="~/assets/img/footer_logo.png"
@@ -70,9 +78,77 @@
         </b-col>
       </b-row>
     </b-scontainer>
+    <div class="footer-end">
+      <div class="columns">
+        <div class="column is-8">
+          <p>© 2018 جميع الحقوق محفوظة | برمجة و تصميم : مربع</p>
+        </div>
+        <div class="column is-4">
+          <ul class="social-media-footer">
+            <li>
+              <a href="https://wa.me/920017780" class="hvr-grow-shadow">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+            </li>
+            <li>
+              <a href="" class="hvr-grow-shadow">
+                <i class="fab fa-facebook-square"></i>
+              </a>
+            </li>
+            <li>
+              <a href="" class="hvr-grow-shadow">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="" class="hvr-grow-shadow"
+                ><i class="fab fa-pinterest"></i
+              ></a>
+            </li>
+            <li>
+              <a href="" class="hvr-grow-shadow"
+                ><i class="fab fa-vimeo-v"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="http://asdcoagro.com/webmail"
+                target="_blank"
+                class="hvr-grow-shadow mail-icon"
+              >
+                <i class="fas fa-envelope"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </footer>
 </template>
 <style scoped>
+footer {
+  background-color: #f5f3f3;
+  padding: 3rem 3rem 0.5rem;
+}
+.footer-end {
+  padding: 0 20px;
+  margin-top: 20px;
+  border-bottom: 53px solid #e9e4e4;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  height: 0;
+}
+.link {
+  color: #1a1e1c;
+  font-weight: 700;
+  display: block;
+  line-height: 30px;
+  font-size: 14px;
+  text-decoration: none;
+}
+.link:hover {
+  color: #329e5d;
+}
 ul {
   text-align: right;
 }
@@ -90,5 +166,12 @@ li {
 }
 .Qr {
   width: 85px;
+}
+.hvr-grow-shadow i {
+  color: #000;
+  font-size: 20px;
+}
+.social-media-footer li {
+  display: inline-block;
 }
 </style>
